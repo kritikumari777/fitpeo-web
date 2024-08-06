@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, theme } from 'antd';
+import { Layout } from 'antd';
 import HeaderComp from './HeaderComp';
 import DashbordComp from '../dashboard/DashbordComp';
 import SideBarComp from './SideBarComp';
@@ -7,10 +7,6 @@ import SideBarComp from './SideBarComp';
 const { Header, Content, Sider } = Layout;
 
 const LayoutComp = () => {
-  const {
-    token: { borderRadiusLG },
-  } = theme.useToken();
-
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Header style={{ background: '#2E383F' }}>
